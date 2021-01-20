@@ -5,16 +5,18 @@
 {% block content %}
 
 <link href="https://fonts.googleapis.com/css?family=Charmonman|Dancing+Script|Kodchasan|Spirax|Abril+Fatface" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
 <header>
   <div class="header">
-    <img src="static/image/greenback.png" style="height: 25vh;" id="image">
+    <img src="static/image/pink2.png" style="height: 50vh; width: 300vh;" id="image">
     <div class="text">
       <p  style="font-family: cursive; text-align: center;">Site of the day on January 20,2020 </p>
      
     </div>
     <h1 id="aw">Welcome to Award Application!!</h1>
     <div class="bt">
-        <button class="btn btn-success" style="border-radius:25px;"><a href="{% url 'homePage' %}">visit site</a></button>
+        <button class="btn btn-light" style="border-radius:25px;"><a href="{% url 'homePage' %}">visit site</a></button>
         <!-- <button class="btn btn-outline-primary" style="border-radius:25px;">collect</button> -->
     </div>
     
@@ -65,7 +67,7 @@
 </div>
 </div>
 
-  <div class="jumbotron text-center mt-0" style="background-color:white;width: 30%; text-align: center; margin-left: 25%;">
+  <!-- <div class="jumbotron text-center mt-0" style="background-color:white;width: 30%; text-align: center; margin-left: 25%;">
     <form action="{% url 'homePage' %}" method="post" id="fora">
       {%csrf_token%}
       {% bootstrap_form letterForm %}
@@ -73,7 +75,7 @@
 
     </form>
 
-  </div>
+  </div> -->
   <footer style="background-color: grey;">
   <div class="container" >
   
@@ -134,8 +136,8 @@
       left:50%;
       transform: translate(-50%,-50%);
       color:white;
-      font-size:50px;
-      font-family:'Grand Hotel',cursive ;
+      font-size:40px;
+      font-family:'Rubik', sans-serif;
     }
     .image:hover{
         box-shadow: 0 1px 328px rgba(0, 0, 0, 0.25),0 1px 2px rgba(0, 0, 0, 0.22);
