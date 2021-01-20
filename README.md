@@ -1,5 +1,6 @@
-# awward_django
-the user must be able to post and view others project that they have posted. the use have their own profile which show the contact,bio, and the post he or she have posted
+# Awward_project
+
+The user must be able to post and view others project that they have posted. The user have their own profile which show the contact, bio, and the post he or she have posted.
 
 ## By Dukunde Marie Jeanne
 ## Description
