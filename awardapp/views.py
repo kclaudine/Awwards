@@ -25,15 +25,7 @@ def home_images(request):
     myprof=Profile.objects.filter(id=current_user.id).first()
     comment=Comment.objects.filter(id=current_user.id).first()
     form=NewsLetterForm()
-    # if request.method== 'POST':
-    #     form=NewsLetterForm(request.POST or None)
-    #     if form.is_valid():
-    #         name=form.cleaned_data['your_name']
-    #         email=form.cleaned_data['email']
-    #         recipient=NewsLetterRecipients(name=name,email=email)
-    #         recipient.save()
-    #         send_welcome_email(name,email)
-    #         HttpResponseRedirect('home_images')
+  
     return render(request,'index.html',{"pictures":pictures,'letterForm':form,"comment":comment,"myprof":myprof})
 
 @login_required(login_url='/accounts/login/')
